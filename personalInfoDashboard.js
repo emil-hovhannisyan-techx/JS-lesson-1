@@ -13,7 +13,7 @@ let contact = {
   city: "Yerevan",
 };
 
-//Printing in the console.
+// Printing in the console.
 console.log(
   `Hi, my name is ${firstName} ${lastName}. I live in ${contact.city}.`
 );
@@ -23,20 +23,23 @@ console.log(
   }.`
 );
 
-//Coercion
+// Added usage of hobbies
+console.log("Here is a list of my personal hobbies:", hobbies.toString());
+
+// Coercion
 const ageString = "25";
 const ageNumber = 25;
 
-console.log(ageString === ageNumber); //Strict comparing - if both the data types and values don't match - false
-console.log(ageString == ageNumber); //coercion case - number is converted to string, which brings to true result
+console.log(ageString === ageNumber); // Strict comparing - if both the data types and values don't match - false
+console.log(ageString == ageNumber); // coercion case - number is converted to string, which brings to true result
 
-//vice-versa
+// vice-versa
 console.log(ageString !== ageNumber);
 console.log(ageString != ageNumber);
 
-//What's log them? should I print it?
+// What's log them? should I print it?
 
-//if-else ing
+// if-else ing
 let score = 42;
 if (score > 100) {
   console.log("Try smaller number!");
@@ -52,7 +55,7 @@ if (score > 100) {
   console.log("F");
 }
 
-//switching
+// switching
 let grade = "A";
 switch (grade) {
   case "A":
@@ -68,17 +71,15 @@ switch (grade) {
     console.log("Try harder");
     break;
   case "F":
-    console.log("Needs serios effors");
+    console.log("Needs serious efforts");
     break;
   default:
     console.log("Something went wrong with the grade variable!");
 }
 
-//Last task
+// Last task
 const passed =
   grade === "A" || grade === "B" || grade === "C"
     ? "You passed. "
     : "You failed. ";
 console.log(passed);
-
-
