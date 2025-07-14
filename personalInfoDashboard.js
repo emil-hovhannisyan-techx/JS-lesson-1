@@ -27,7 +27,7 @@ console.log(
 console.log("Here is a list of my personal hobbies:", hobbies.toString());
 
 //Alternative usage
-for (hobby of hobbies) {
+for (const hobby of hobbies) {
   console.log("Hobbies: ", hobby);
 }
 
