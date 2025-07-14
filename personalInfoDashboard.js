@@ -26,6 +26,11 @@ console.log(
 // Added usage of hobbies
 console.log("Here is a list of my personal hobbies:", hobbies.toString());
 
+//Alternative usage
+for (hobby of hobbies) {
+  console.log("Hobbies: ", hobby);
+}
+
 // Coercion
 const ageString = "25";
 const ageNumber = 25;
